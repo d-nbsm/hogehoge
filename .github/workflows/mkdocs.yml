@@ -24,6 +24,8 @@ jobs:
       - name: Install MkDocs
         run: |
           python3 -m pip install setuptools
-          python3 -m pip install -r requirements.txt
+          python3 -m pip install mkdocs
+          python3 -m pip install mkdocs-material
+          python3 -m pip install fontawesome-markdown
       - name: Deploy HTML files
         run: python3 -m mkdocs gh-deploy
