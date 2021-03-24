@@ -44,3 +44,4 @@ markdown_extensions:
 nav:
   - Home: index.md
   - Hoge: hoge.md
+  - Fuga: fuga.md
