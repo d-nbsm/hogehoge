@@ -1,0 +1,46 @@
+site_name: ゼロから学ぶ MkDocs
+site_description: ゼロから学ぶ MkDocs
+site_author: nbsm
+site_url: https://d-nbsm.github.io/hogehoge
+repo_name: d-nbsm/hogehoge
+repo_url: https://github.com/d-nbsm/hogehoge
+copyright: (c) 2021 nbsm
+
+theme:
+  name: material
+  palette:
+    scheme: preference
+    primary: indigo
+    accent: amber
+  font:
+    text: Noto Sans
+    code: Inconsolata
+  language: ja
+  icon:
+    repo: fontawesome/brands/gitlab
+  features:
+    - navigation.instant
+
+plugins:
+  - search:
+      lang:
+      - en
+      - ja
+      separator: '[\s　、。，．がのをにへとでやかもる「」『』]+'
+      prebuild_index: true
+markdown_extensions:
+  - admonition
+  - codehilite
+  - fontawesome_markdown
+  - footnotes
+  - meta
+  - pymdownx.inlinehilite
+  - pymdownx.magiclink
+  - pymdownx.superfences
+  - toc:
+      permalink: true
+
+# Page tree
+nav:
+  - Home: index.md
+  - Hoge: hoge.md
